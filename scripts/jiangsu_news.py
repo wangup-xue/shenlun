@@ -22,7 +22,7 @@ QUERIES = [
 ]
 
 def clean(value):
-    return re.sub(r'\\s+', ' ', value or '').strip()
+    return re.sub(r'\s+', ' ', value or '').strip()
 
 def fetch(query, label):
     params = urllib.parse.urlencode({'q': query, 'hl': 'zh-CN', 'gl': 'CN', 'ceid': 'CN:zh-Hans'})
