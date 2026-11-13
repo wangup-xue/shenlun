@@ -1,0 +1,28 @@
+name: Validate Jiangsu Site
+on:
+  push:
+    branches: [jiangsu-migration]
+  pull_request:
+    branches: [main]
+    paths:
+      - "data/jiangsu/**"
+      - "scripts/jiangsu_*.py"
+      - "scripts/validate_jiangsu.py"
+      - "index.html"
+      - "jiangsu-*.html"
+      - "assets/jiangsu-cases.js"
+      - ".github/workflows/**"
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile Python scripts
+        run: python -m py_compile scripts/jiangsu_news.py scripts/jiangsu_pipeline.py scripts/validate_jiangsu.py
+      - name: Validate Jiangsu data
+        run: python scripts/validate_jiangsu.py
