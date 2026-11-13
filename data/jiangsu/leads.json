@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 19:21:07",
+  "updated": "2026-11-13 19:24:22",
   "timezone": "Asia/Shanghai",
   "analysis_mode": "RSS标题与短摘要级；不是全文分析",
   "provider": "siliconflow",
@@ -14,7 +14,7 @@
       "city": "全国/待核",
       "summary": "首都高校新生同上“强国复兴有我”大思政课 &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -26,7 +26,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -38,7 +39,7 @@
       "city": "全国/待核",
       "summary": "韩正出席《联合国气候变化框架公约》第三十一次缔约方大会安塔利亚领导人峰会并作国别发言 &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -50,7 +51,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -62,7 +64,7 @@
       "city": "全国/待核",
       "summary": "韩国外长赵显将访华 &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -74,7 +76,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -86,7 +89,7 @@
       "city": "盐城",
       "summary": "韩国堤川市长率团访问江苏省盐城市 决定深化多领域交流合作 &nbsp;&nbsp; 뉴스핌",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -98,7 +101,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注盐城相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -110,7 +114,7 @@
       "city": "全国/待核",
       "summary": "阿联酋发生严重交通事故致14人死亡--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -122,7 +126,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -134,7 +139,7 @@
       "city": "全国/待核",
       "summary": "阿富汗与俄罗斯签署经济合作谅解备忘录--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "产业发展",
         "thesis": "围绕产业发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -146,7 +151,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -158,7 +164,7 @@
       "city": "全国/待核",
       "summary": "跟车700多公里，看新能源重卡何以越跑越远（人民眼·推动新能源重卡规模化应用） &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "产业发展",
         "thesis": "围绕产业发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -170,7 +176,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -182,7 +189,7 @@
       "city": "全国/待核",
       "summary": "谢锋：推动中美建设性战略稳定关系行稳致远--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -194,7 +201,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -206,7 +214,7 @@
       "city": "全国/待核",
       "summary": "让科学种子在追问中萌发（中国道路中国梦·青春为中国式现代化挺膺担当64） &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -218,7 +226,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -230,7 +239,7 @@
       "city": "全国/待核",
       "summary": "让新能源重卡跑得更稳更远（有所思） &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "产业发展",
         "thesis": "围绕产业发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -242,7 +251,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -254,7 +264,7 @@
       "city": "全国/待核",
       "summary": "菲律宾马尼拉街头警匪交火致两死一伤--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -266,7 +276,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -278,7 +289,7 @@
       "city": "全国/待核",
       "summary": "英国18处海滩因不明来源漏油污染而关闭--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "生态治理",
         "thesis": "围绕生态治理，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -290,7 +301,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -302,7 +314,7 @@
       "city": "全国/待核",
       "summary": "美疾控中心：今年美国麻疹相关死亡病例升至6例--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -314,7 +326,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -326,7 +339,7 @@
       "city": "全国/待核",
       "summary": "美总统特使：将举行新一轮乌克兰问题会谈--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -338,7 +351,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -350,7 +364,7 @@
       "city": "全国/待核",
       "summary": "美媒：万斯正考虑与伊朗安全高官面对面会谈 &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -362,7 +376,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -374,7 +389,7 @@
       "city": "全国/待核",
       "summary": "美媒披露特朗普政府多名高层面临民主党调查和弹劾--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -386,7 +401,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -398,7 +414,7 @@
       "city": "全国/待核",
       "summary": "美国纽约楼房倒塌死亡人数升至8人--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -410,7 +426,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -422,7 +439,7 @@
       "city": "全国/待核",
       "summary": "美国华盛顿枪击事件已致1死4伤--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -434,7 +451,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -446,7 +464,7 @@
       "city": "全国/待核",
       "summary": "美国华盛顿发生枪击事件--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -458,7 +476,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -470,7 +489,7 @@
       "city": "全国/待核",
       "summary": "美中关系面临复杂挑战，双方需继续保持对话--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -482,7 +501,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -494,7 +514,7 @@
       "city": "全国/待核",
       "summary": "纪念孙中山先生诞辰160周年活动在墨西哥举行--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -506,7 +526,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -518,7 +539,7 @@
       "city": "全国/待核",
       "summary": "纪念孙中山先生诞辰160周年大会在京举行 &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -530,7 +551,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -542,7 +564,7 @@
       "city": "全国/待核",
       "summary": "第十届中非青年大联欢举行--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -554,7 +576,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -566,7 +589,7 @@
       "city": "全国/待核",
       "summary": "第二届全国全民健身大赛总决赛举行 &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -578,7 +601,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -590,7 +614,7 @@
       "city": "全国/待核",
       "summary": "真正的领先，不惧开放共享（人民锐评） &nbsp;&nbsp; 人民日报",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "改革开放",
         "thesis": "围绕改革开放，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -602,7 +626,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -614,7 +639,7 @@
       "city": "全国/待核",
       "summary": "目瑙纵歌歌纵天下--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -626,7 +651,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -638,7 +664,7 @@
       "city": "全国/待核",
       "summary": "王毅会见2026中美政党对话美方代表 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -650,7 +676,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -662,7 +689,7 @@
       "city": "全国/待核",
       "summary": "特朗普连续发帖痛斥民主党“腐败”--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -674,7 +701,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -686,7 +714,7 @@
       "city": "全国/待核",
       "summary": "深圳盛装喜迎亚太宾朋 &nbsp;&nbsp; 人民网-图片频道",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -698,7 +726,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     },
     {
@@ -710,7 +739,7 @@
       "city": "全国/待核",
       "summary": "泽连斯基称美俄谈俄欧安全架构“有点奇怪”--国际 &nbsp;&nbsp; 人民网",
       "analysis": {
-        "level": "待AI分析",
+        "level": "AI分析暂不可用",
         "topic": "综合治理与高质量发展",
         "thesis": "围绕综合治理与高质量发展，统筹目标引领、问题破解与长效机制建设。",
         "policy_angles": [
@@ -722,7 +751,8 @@
           "金句提炼": "摘要未提供可核验原句；此处为写作思路，不是新闻引语。",
           "案例": "关注全国/待核相关实践；具体做法、数字和成效须打开原文核验。"
         },
-        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。"
+        "evidence_warning": "当前仅有RSS标题/短摘要，尚未进行全文核验；不得将推演内容当作新闻事实。",
+        "analysis_error": "SiliconFlow HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}"
       }
     }
   ]
