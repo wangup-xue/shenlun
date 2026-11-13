@@ -56,6 +56,14 @@ def fallback(item, city):
 
 def main():
     os.makedirs(DATA, exist_ok=True)
+    originals_path = os.path.join(DATA, "originals.json")
+    curated_items = []
+    if os.path.exists(originals_path):
+        try:
+            with open(originals_path, encoding="utf-8") as f:
+                curated_items = json.load(f).get("items", [])
+        except Exception as exc:
+            print("原文核验素材库读取失败，将继续生成RSS分析：" + str(exc))
     news_path = os.path.join(DATA, "news.json")
     out_path = os.path.join(DATA, "leads.json")
     try:
@@ -190,13 +198,16 @@ def main():
                 "不得补造新闻事实、数字、政策名称或直接引语。输出纯JSON，字段："
                 "topic（主题）、thesis（申论总论点）、policy_angles（2-3条可迁移分析角度）、"
                 "three_color_notes（对象含论点、金句提炼、案例；金句提炼必须明确是概括而非原文引语）、"
-                "evidence_warning（提醒打开原文核验）。如信息不足请明确写待核。"
+                "argument_expansion（3-4条分论点，每条说明分析逻辑；只能写分析角度，不能伪装成新闻事实）、"
+                "writing_application（适用申论主题及可用论证结构）、evidence_warning（提醒打开原文核验）。"
+                "内容要求：核心论点约80-130字；论点展开约100-180字；案例只复述摘要确有的信息，摘要没有案例就明确写待核；金句提供2-3条可直接用于写作的概括表达并注明非原文引语。"
+                "严禁用常识补齐新闻细节，严禁虚构政策、数据、地点、人物、成效；RSS素材必须标注摘要级分析。信息不足时宁可写待核，不得凑字数。"
                 "\n城市归属：" + city
                 + "\n标题：" + item.get("title", "")
                 + "\nRSS摘要：" + item.get("summary", "")
             )
             try:
-                data = annotate.extract_json(call_provider(prompt, max_tokens=1200))
+                data = annotate.extract_json(call_provider(prompt, max_tokens=2000))
                 card.update(data)
                 card["level"] = "RSS摘要级AI分析"
             except Exception as exc:
@@ -208,6 +219,12 @@ def main():
             "category": item.get("category", ""), "city": city,
             "summary": item.get("summary", ""), "analysis": card
         })
+    # 原文核验型素材独立维护，避免每日RSS任务覆盖人工核验和扩写内容。
+    # 同一篇文章只保留原文核验版本，避免重复展示摘要级卡片。
+    curated_urls = {row.get("url") for row in curated_items if row.get("url")}
+    leads = [row for row in leads if row.get("url") not in curated_urls]
+    leads.extend(curated_items)
+
     payload = {
         "updated": datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S"),
         "timezone": "Asia/Shanghai",
