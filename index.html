@@ -3,68 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>申论素材站 · 湖南三色笔记</title>
-<meta name="description" content="湖南省考申论素材每日更新 —— 三色笔记（论点/金句/案例）+ 规范词积累">
+<title>江苏申论素材站 · 每日新闻与三色笔记</title>
+<meta name="description" content="江苏省13个设区市申论案例方向与人民日报、江苏新闻线索">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.jsc-wrap{max-width:1100px;margin:24px auto;padding:0 18px}.jsc-head{margin:18px 0 22px}.jsc-head h1{font-size:25px}.jsc-note{color:#777;font-size:13px;line-height:1.8}.jsc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.jsc-card,.jsc-news{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:16px}.jsc-card h3{margin:0 0 8px}.jsc-city{color:#888;font-size:13px}.jsc-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.jsc-tag{background:#f2f5f8;border-radius:14px;padding:4px 9px;font-size:12px}.jsc-news-list{display:grid;gap:10px}.jsc-news a{font-weight:600;color:inherit;text-decoration:none}.jsc-meta{font-size:12px;color:#888;margin:6px 0}.jsc-summary{font-size:13px;color:#555;line-height:1.7}
+</style>
 </head>
 <body>
-
-<header class="topbar">
-  <div class="topbar-inner">
-    <div class="brand">
-      <h1>申论素材站</h1>
-      <span class="sub">湖南省考 · 三色笔记 · 每日更新</span>
-    </div>
-    <nav class="tabs">
-      <button class="tab active" data-tab="material">今日素材</button>
-      <button class="tab" data-tab="terms">规范词库</button>
-      <button class="tab" data-tab="outline">考点提纲</button>
-      <button class="tab" data-tab="all">全部索引</button>
-    </nav>
-  </div>
-</header>
-
-<div class="toolbar">
-  <input type="search" id="q" placeholder="搜索标题 / 正文 / 规范词…">
-  <label>来源</label>
-  <select id="f-source"><option value="">全部</option></select>
-  <label>栏目</label>
-  <select id="f-column"><option value="">全部</option></select>
-  <label>日期</label>
-  <select id="f-date"><option value="">全部</option></select>
-  <div class="chips" id="chips"></div>
-  <span class="count" id="count"></span>
-</div>
-
-<div class="layout">
-  <aside class="sidebar" id="sidebar">
-    <h2>📌 考点提纲</h2>
-    <div id="side-list"><div class="empty">加载中…</div></div>
-  </aside>
-
-  <main class="main">
-    <section class="panel on" id="panel-material">
-      <div id="articles"><div class="loading">正在加载素材…</div></div>
-    </section>
-
-    <section class="panel" id="panel-terms">
-      <div class="legend">
-        <span>规范词库 · 共 <b id="term-count">0</b> 条</span>
-        <span>释义为湖南语境下的具体所指</span>
-      </div>
-      <div class="terms-grid" id="terms"></div>
-    </section>
-
-    <section class="panel" id="panel-outline">
-      <div id="outlines"></div>
-    </section>
-
-    <section class="panel" id="panel-all">
-      <div class="list-card" id="all-list"></div>
-    </section>
-  </main>
-</div>
-
-<script src="assets/app.js"></script>
-</body>
-</html>
+<header class="topbar"><div class="topbar-inner"><div class="brand"><h1>江苏申论素材站</h1><span class="sub">人民日报为主 · 江苏特色案例 · 全省13市</span></div><nav class="tabs"><a class="tab active" href="index.html">江苏版首页</a><a class="tab" href="jiangsu-cases.html">案例与新闻</a><a class="tab" href="jiangsu-terms.html">规范表达词库</a><a class="tab" href="hunan-archive.html">湖南历史归档</a></nav></div></header>
+<main class="jsc-wrap">
+<section class="jsc-head"><h1>江苏省考申论素材</h1><p class="jsc-note">江苏版独立数据区：人民日报与江苏13市新闻线索、案例方向和摘要级申论分析。原湖南历史索引已单独归档，不会混入江苏新闻流。</p></section><section class="jsc-head"><h1>江苏13市案例库</h1><p class="jsc-note">以下为可继续查证和积累的案例方向，不将方向性描述等同于最新政策成效。写作引用具体数字、年份、项目进度前，请以官方发布为准。</p></section>
+<div id="cities" class="jsc-grid">正在加载案例…</div>
+<section class="jsc-head"><h1>新闻申论线索卡片</h1><p class="jsc-note">基于RSS标题和短摘要生成，非全文分析；请核验原文。</p></section><div id="leads"></div><section class="jsc-head"><h1>人民日报与江苏新闻线索</h1><p class="jsc-note">每日自动发现新闻标题、来源、日期和原文链接；本站不存储或转载新闻全文。RSS检索结果可能有延迟或遗漏。</p><p id="updated" class="jsc-note"></p></section>
+<div id="news" class="jsc-news-list">正在加载新闻…</div>
+</main>
+<script src="assets/jiangsu-cases.js"></script>
+</body></html>

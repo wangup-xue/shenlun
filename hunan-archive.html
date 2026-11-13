@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>湖南历史素材归档 · 原三色笔记</title>
+<meta name="description" content="原湖南版申论素材历史归档，保留旧文章、规范词库与索引">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <h1>湖南历史素材归档</h1>
+      <span class="sub">原湖南版历史数据 · 仅供查阅</span>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-tab="material">历史素材</button>
+      <button class="tab" data-tab="terms">规范词库</button>
+      <button class="tab" data-tab="outline">考点提纲</button>
+      <button class="tab" data-tab="all">全部索引</button>
+      <a class="tab" href="index.html">返回江苏版首页</a>
+    </nav>
+  </div>
+</header>
+
+<div style="max-width:1100px;margin:12px auto;padding:12px 18px;background:#fff7e6;border:1px solid #f0dfb5;border-radius:10px;color:#765b22">这是原湖南版历史素材归档，保留原有文章、规范词库和索引。内容带有湖南地域语境，江苏备考请优先使用江苏版案例与新闻页面。<a href="index.html">返回江苏版首页</a></div>
+<div class="toolbar">
+  <input type="search" id="q" placeholder="搜索标题 / 正文 / 规范词…">
+  <label>来源</label>
+  <select id="f-source"><option value="">全部</option></select>
+  <label>栏目</label>
+  <select id="f-column"><option value="">全部</option></select>
+  <label>日期</label>
+  <select id="f-date"><option value="">全部</option></select>
+  <div class="chips" id="chips"></div>
+  <span class="count" id="count"></span>
+</div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <h2>📌 考点提纲</h2>
+    <div id="side-list"><div class="empty">加载中…</div></div>
+  </aside>
+
+  <main class="main">
+    <section class="panel on" id="panel-material">
+      <div id="articles"><div class="loading">正在加载素材…</div></div>
+    </section>
+
+    <section class="panel" id="panel-terms">
+      <div class="legend">
+        <span>规范词库 · 共 <b id="term-count">0</b> 条</span>
+        <span>以下为历史湖南语境词条，不应直接作为江苏案例使用</span>
+      </div>
+      <div class="terms-grid" id="terms"></div>
+    </section>
+
+    <section class="panel" id="panel-outline">
+      <div id="outlines"></div>
+    </section>
+
+    <section class="panel" id="panel-all">
+      <div class="list-card" id="all-list"></div>
+    </section>
+  </main>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
