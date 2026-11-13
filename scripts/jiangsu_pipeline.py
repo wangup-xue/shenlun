@@ -72,7 +72,16 @@ def main():
         city = city_for(item)
         card = fallback(item, city)
         if has_key and annotate:
-            prompt = """你是江苏省考申论教研员。只根据给出的新闻标题和RSS短摘要做谨慎的摘要级研判，不得补造新闻事实、数字、政策名称或直接引语。输出纯JSON，字段：topic（主题）、thesis（申论总论点）、policy_angles（2-3条可迁移分析角度）、three_color_notes（对象含论点、金句提炼、案例；金句提炼必须明确是概括而非原文引语）、evidence_warning（提醒打开原文核验）。如信息不足请明确写待核。\n城市归属：" + city + "\n标题：" + item.get("title", "") + "\nRSS摘要：" + item.get("summary", "")
+            prompt = (
+                "你是江苏省考申论教研员。只根据给出的新闻标题和RSS短摘要做谨慎的摘要级研判，"
+                "不得补造新闻事实、数字、政策名称或直接引语。输出纯JSON，字段："
+                "topic（主题）、thesis（申论总论点）、policy_angles（2-3条可迁移分析角度）、"
+                "three_color_notes（对象含论点、金句提炼、案例；金句提炼必须明确是概括而非原文引语）、"
+                "evidence_warning（提醒打开原文核验）。如信息不足请明确写待核。"
+                "\\n城市归属：" + city
+                + "\\n标题：" + item.get("title", "")
+                + "\\nRSS摘要：" + item.get("summary", "")
+            )
             try:
                 data = annotate.extract_json(annotate.call_llm(prompt, max_tokens=1200))
                 card.update(data)
