@@ -19,7 +19,7 @@ jobs:
       - name: Checkout migration branch
         uses: actions/checkout@v4
         with:
-          ref: jiangsu-migration
+          ref: ${{ github.ref }}
           fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,5 +42,5 @@ jobs:
             echo "No news metadata changes."
           else
             git commit -m "chore: update Jiangsu news and analysis cards"
-            git push origin HEAD:jiangsu-migration
+            git push origin HEAD:${GITHUB_REF_NAME}
           fi
