@@ -77,6 +77,10 @@ def is_relevant(item):
     category = item.get("category", "")
     if any(word in text for word in IRRELEVANT_MARKERS):
         return False
+    # 人民日报国际版突发/外交快讯不作为江苏申论日常素材主池。
+    # 江苏城市对外交流类报道仍按城市分类保留。
+    if category == "人民日报" and ("--国际" in title or "国际 - 人民网" in title):
+        return False
     if category == "人民日报":
         return any(word in text for word in NATIONAL_RELEVANCE)
     if category == "江苏省级":
