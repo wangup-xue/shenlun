@@ -1,7 +1,9 @@
 {
-  "updated": "2026-11-13 19:15:35",
+  "updated": "2026-11-13 19:21:07",
   "timezone": "Asia/Shanghai",
   "analysis_mode": "RSS标题与短摘要级；不是全文分析",
+  "provider": "siliconflow",
+  "model": "deepseek-ai/DeepSeek-V3.2",
   "items": [
     {
       "title": "首都高校新生同上“强国复兴有我”大思政课 - 人民日报",
