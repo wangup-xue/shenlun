@@ -68,7 +68,7 @@ def main():
         annotate = None
         has_key = False
     leads = []
-    for item in items[:120]:
+    for item in items[:30]:
         city = city_for(item)
         card = fallback(item, city)
         if has_key and annotate:
