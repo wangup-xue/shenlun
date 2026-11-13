@@ -38,6 +38,10 @@ jobs:
         run: python scripts/jiangsu_news.py
       - name: Build Jiangsu analysis cards
         env:
+          LLM_PROVIDER: siliconflow
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          SILICONFLOW_BASE_URL: ${{ vars.SILICONFLOW_BASE_URL }}
+          SILICONFLOW_MODEL: ${{ vars.SILICONFLOW_MODEL }}
           MINIMAX_CN_API_KEY: ${{ secrets.MINIMAX_CN_API_KEY }}
         run: python scripts/jiangsu_pipeline.py
       - name: Commit updated metadata
