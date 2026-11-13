@@ -3,7 +3,7 @@ name: Daily Jiangsu News Discovery
 on:
   workflow_dispatch:
   push:
-    branches: [jiangsu-migration]
+    branches: [main, jiangsu-migration]
     paths-ignore:
       - "data/jiangsu/news.json"
       - "data/jiangsu/leads.json"
@@ -21,7 +21,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout migration branch
+      - name: Checkout workflow branch
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
