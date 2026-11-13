@@ -302,3 +302,8 @@ body {
   .toolbar input[type="search"] { min-width: 100%; max-width: none; }
   .para { text-indent: 0; }
 }
+
+/* Jiangsu front-page layout helpers */
+.jsh-card p{font-size:14px;line-height:1.8;color:var(--text-muted)}
+.jsh-card h3 a{color:var(--text);text-decoration:none}.jsh-card h3 a:hover{color:var(--accent)}
+@media(max-width:600px){.jsh-banner h2{font-size:19px}.jsh-card{padding:14px}.jsh-toolbar input{min-width:100%}.jsh-toolbar select{flex:1;min-width:100px}}
