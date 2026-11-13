@@ -5,12 +5,11 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - "*.html"
+      - "assets/**"
       - "data/jiangsu/**"
       - "scripts/jiangsu_*.py"
       - "scripts/validate_jiangsu.py"
-      - "index.html"
-      - "jiangsu-*.html"
-      - "assets/jiangsu-cases.js"
       - ".github/workflows/**"
 permissions:
   contents: read
