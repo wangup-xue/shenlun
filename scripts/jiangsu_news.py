@@ -55,6 +55,36 @@ def fetch(query, label):
                          'summary': desc, 'category': label})
     return rows
 
+
+# 申论相关性词：人民日报全国新闻需命中至少一项，避免国际快讯、社会琐闻挤占素材位。
+NATIONAL_RELEVANCE = [
+    "改革", "发展", "治理", "民生", "高质量", "现代化", "创新", "科技", "人工智能",
+    "产业", "制造", "新能源", "绿色", "生态", "环保", "乡村", "农业", "粮食",
+    "教育", "就业", "医疗", "养老", "社会保障", "公共服务", "营商环境", "市场监管",
+    "法治", "基层", "社区", "文化", "非遗", "文旅", "文化遗产", "数字经济",
+    "共同富裕", "区域协调", "城乡", "开放", "国际合作", "气候", "减污", "双碳",
+    "知识产权", "人才", "创业", "消费", "提振", "安全生产", "应急管理", "社会治理",
+    "国企", "民营经济", "长三角", "长江经济带", "黄河", "大运河", "公共卫生"
+]
+IRRELEVANT_MARKERS = [
+    "枪击", "交火", "死亡人数", "致死", "遇难", "车祸", "交通事故", "楼房倒塌",
+    "炸弹威胁", "被捕", "犯罪嫌疑人", "球赛", "夺冠", "比分", "明星", "演唱会",
+    "换牙", "就医提醒", "股价", "国际油价", "特朗普发帖", "选举民调"
+]
+def is_relevant(item):
+    title = item.get("title", "")
+    text = title + " " + item.get("summary", "")
+    category = item.get("category", "")
+    if any(word in text for word in IRRELEVANT_MARKERS):
+        return False
+    if category == "人民日报":
+        return any(word in text for word in NATIONAL_RELEVANCE)
+    if category == "江苏省级":
+        return "江苏" in text
+    if category in ("南京", "无锡", "徐州", "常州", "苏州", "南通", "连云港", "淮安", "盐城", "扬州", "镇江", "泰州", "宿迁"):
+        return category in text or "江苏" + category in text
+    return False
+
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     old = {}
