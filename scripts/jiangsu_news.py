@@ -101,7 +101,7 @@ def main():
                     old[item['url']] = item
         except Exception as exc:
             errors.append(f'{label}: {exc}')
-    items = sorted(old.values(), key=lambda x: (x.get('date',''), x.get('title','')), reverse=True)[:300]
+    items = sorted((x for x in old.values() if is_relevant(x)), key=lambda x: (x.get('date',''), x.get('title','')), reverse=True)[:300]
     payload = {'updated': datetime.now(CST).strftime('%Y-%m-%d %H:%M:%S'),
                'timezone': 'Asia/Shanghai', 'items': items, 'warnings': errors,
                'notice': 'RSS仅用于新闻发现；请打开原文核验来源、事实和数据。本站不转载新闻全文。'}
