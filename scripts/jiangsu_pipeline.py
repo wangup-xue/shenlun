@@ -4,6 +4,8 @@ import json
 import os
 import re
 import sys
+import urllib.request
+import urllib.error
 from datetime import datetime, timezone, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -60,13 +62,61 @@ def main():
     except Exception as exc:
         raise SystemExit("新闻元数据不可用: " + str(exc))
     items = news.get("items", [])
-    try:
-        sys.path.insert(0, os.path.join(ROOT, "scripts"))
-        import annotate
-        has_key = bool(annotate.read_api_key())
-    except Exception:
-        annotate = None
-        has_key = False
+    sys.path.insert(0, os.path.join(ROOT, "scripts"))
+    import annotate
+    provider = os.environ.get("LLM_PROVIDER", "siliconflow").strip().lower()
+    if provider not in ("siliconflow", "minimax"):
+        raise SystemExit("LLM_PROVIDER 仅支持 siliconflow 或 minimax")
+    if provider == "siliconflow":
+        api_key = os.environ.get("SILICONFLOW_API_KEY", "").strip()
+        api_base = os.environ.get("SILICONFLOW_BASE_URL", "https://api.siliconflow.cn/v1").strip().rstrip("/")
+        model = os.environ.get("SILICONFLOW_MODEL", "deepseek-ai/DeepSeek-V3.2").strip()
+    else:
+        api_key = annotate.read_api_key()
+        api_base = ""
+        model = "MiniMax-M3.1-Flash"
+    has_key = bool(api_key)
+
+    def call_provider(prompt, max_tokens=1200):
+        if provider == "minimax":
+            return annotate.call_llm(prompt, max_tokens=max_tokens)
+        payload = {
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": max_tokens,
+            "temperature": 0.2
+        }
+        request = urllib.request.Request(
+            api_base + "/chat/completions",
+            data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+            headers={
+                "Authorization": "Bearer " + api_key,
+                "Content-Type": "application/json"
+            },
+            method="POST"
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=120) as response:
+                result = json.loads(response.read().decode("utf-8", "ignore"))
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", "ignore")[:500]
+            raise RuntimeError("SiliconFlow HTTP %s: %s" % (exc.code, detail)) from exc
+        except Exception as exc:
+            raise RuntimeError("SiliconFlow 请求失败: %s" % exc) from exc
+        choices = result.get("choices") or []
+        if not choices:
+            raise RuntimeError("SiliconFlow 未返回 choices: " + str(result)[:300])
+        message = choices[0].get("message") or {}
+        content = message.get("content", "")
+        if isinstance(content, list):
+            content = "".join(
+                part.get("text", "") for part in content if isinstance(part, dict)
+            )
+        if not str(content).strip():
+            content = message.get("reasoning_content", "")
+        if not str(content).strip():
+            raise RuntimeError("SiliconFlow 返回内容为空")
+        return str(content)
     leads = []
     for item in items[:30]:
         city = city_for(item)
@@ -83,7 +133,7 @@ def main():
                 + "\nRSS摘要：" + item.get("summary", "")
             )
             try:
-                data = annotate.extract_json(annotate.call_llm(prompt, max_tokens=1200))
+                data = annotate.extract_json(call_provider(prompt, max_tokens=1200))
                 card.update(data)
                 card["level"] = "RSS摘要级AI分析"
             except Exception as exc:
@@ -99,6 +149,8 @@ def main():
         "updated": datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S"),
         "timezone": "Asia/Shanghai",
         "analysis_mode": "RSS标题与短摘要级；不是全文分析",
+        "provider": provider,
+        "model": model if provider == "siliconflow" else "MiniMax-M3.1-Flash",
         "items": leads
     }
     with open(out_path, "w", encoding="utf-8") as f:
