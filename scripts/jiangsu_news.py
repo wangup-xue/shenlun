@@ -97,7 +97,8 @@ def main():
     for label, query in QUERIES:
         try:
             for item in fetch(query, label):
-                old[item['url']] = item
+                if is_relevant(item):
+                    old[item['url']] = item
         except Exception as exc:
             errors.append(f'{label}: {exc}')
     items = sorted(old.values(), key=lambda x: (x.get('date',''), x.get('title','')), reverse=True)[:300]
