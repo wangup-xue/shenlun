@@ -13,7 +13,12 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(BASE, "data", "jiangsu", "news.json")
 CST = timezone(timedelta(hours=8))
 QUERIES = [
-    ('人民日报', 'site:people.com.cn (人民日报 OR 人民日报评论)'),
+    # 主池：优先人民日报纸面版与人民日报系深度报道、评论。
+    ('人民日报', 'site:paper.people.com.cn/rmrb (改革 OR 发展 OR 治理 OR 民生 OR 经济 OR 生态 OR 科技 OR 法治)'),
+    ('人民日报', 'site:paper.people.com.cn (人民眼 OR 调查与思考 OR 人民锐评 OR 今日谈 OR 微观 OR 专题深思)'),
+    ('人民日报', 'site:people.com.cn 人民日报 (高质量发展 OR 现代化 OR 基层治理 OR 民生 OR 绿色发展)'),
+    ('人民日报', '人民日报 经济社会生态法治文化 深度报道 评论 2026'),
+    # 补充池：江苏省级与13市实践，不与人民日报主池等量竞争。
     ('江苏省级', '江苏省 政府 工作部署 改革发展 民生 生态 科技'),
     ('南京', '南京 市政府 改革发展 民生 科技'),
     ('无锡', '无锡 市政府 太湖 生态 产业 创新'),
@@ -105,10 +110,24 @@ def main():
                     old[item['url']] = item
         except Exception as exc:
             errors.append(f'{label}: {exc}')
-    items = sorted((x for x in old.values() if is_relevant(x)), key=lambda x: (x.get('date',''), x.get('title','')), reverse=True)[:300]
+    candidates = [x for x in old.values() if is_relevant(x)]
+    # 主池与补充池分开排序：最多300条时优先保证约70%人民日报内容；
+    # 若人民日报当期供稿不足，再由江苏省级及13市真实报道补位，不伪造条目。
+    national = sorted((x for x in candidates if x.get('category') == '人民日报'),
+                      key=lambda x: (x.get('date',''), x.get('title','')), reverse=True)
+    local = sorted((x for x in candidates if x.get('category') != '人民日报'),
+                   key=lambda x: (x.get('date',''), x.get('title','')), reverse=True)
+    cap = 300
+    national_quota = 210
+    local_quota = cap - national_quota
+    items = national[:national_quota] + local[:local_quota]
+    if len(items) < cap:
+        remaining = national[national_quota:] + local[local_quota:]
+        items.extend(remaining[:cap-len(items)])
     payload = {'updated': datetime.now(CST).strftime('%Y-%m-%d %H:%M:%S'),
                'timezone': 'Asia/Shanghai', 'items': items, 'warnings': errors,
-               'notice': 'RSS仅用于新闻发现；请打开原文核验来源、事实和数据。本站不转载新闻全文。'}
+               'source_policy': {'primary': '人民日报及人民日报系评论、深度报道', 'supplementary': '江苏省级及13个设区市真实报道', 'target_mix': '最多300条时优先约70%人民日报、约30%江苏地方；人民日报不足时由地方报道补位'},
+               'notice': '人民日报为主池，江苏省级及13市为补充池。RSS仅用于新闻发现；请打开原文核验来源、事实和数据。本站不转载新闻全文。'}
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     print(f'已保存 {len(items)} 条新闻元数据；RSS源异常 {len(errors)} 个')
