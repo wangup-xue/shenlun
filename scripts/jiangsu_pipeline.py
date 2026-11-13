@@ -69,8 +69,8 @@ def main():
         raise SystemExit("LLM_PROVIDER 仅支持 siliconflow 或 minimax")
     if provider == "siliconflow":
         api_key = os.environ.get("SILICONFLOW_API_KEY", "").strip()
-        api_base = os.environ.get("SILICONFLOW_BASE_URL", "https://api.siliconflow.cn/v1").strip().rstrip("/")
-        model = os.environ.get("SILICONFLOW_MODEL", "deepseek-ai/DeepSeek-V3.2").strip()
+        api_base = (os.environ.get("SILICONFLOW_BASE_URL") or "https://api.siliconflow.cn/v1").strip().rstrip("/")
+        model = (os.environ.get("SILICONFLOW_MODEL") or "deepseek-ai/DeepSeek-V3.2").strip()
     else:
         api_key = annotate.read_api_key()
         api_base = ""
@@ -155,7 +155,7 @@ def main():
     }
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
-    print("已生成 %d 条江苏申论线索卡片；AI密钥%s" % (len(leads), "已配置" if has_key else "未配置，使用待分析模板"))
+    print("已生成 %d 条江苏申论线索卡片；AI密钥%s（服务商：%s）" % (len(leads), "已配置" if has_key else "未配置，使用待分析模板", provider))
 
 if __name__ == "__main__":
     main()
