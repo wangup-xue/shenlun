@@ -119,7 +119,8 @@ def main():
         if not str(content).strip():
             raise RuntimeError("SiliconFlow 返回内容为空")
         return str(content)
-    # 分层选材：先覆盖13市，再选省级报道，最后补充人民日报全国性议题。
+    # 来源分层：人民日报为主体（目标21/30，约70%），江苏省级及13市为补充（约30%）。
+    # 每日轮转城市起点，避免长期只展示固定的9个城市。
     city_items = {city: [] for city in CITY_NAMES}
     provincial_items, national_items = [], []
     for row in items:
@@ -130,24 +131,55 @@ def main():
             provincial_items.append(row)
         elif cat == "人民日报":
             national_items.append(row)
+    sort_key = lambda row: (row.get("date", ""), row.get("title", ""))
+    national_items.sort(key=sort_key, reverse=True)
+    provincial_items.sort(key=sort_key, reverse=True)
+    for city in CITY_NAMES:
+        city_items[city].sort(key=sort_key, reverse=True)
+
     selected, used = [], set()
-    # 每市最多先取2条，按城市轮转，避免单一城市占满首页。
-    for round_index in range(2):
-        for city in CITY_NAMES:
-            for row in city_items[city][round_index:round_index + 1]:
-                if row.get("url") not in used:
-                    selected.append(row); used.add(row.get("url"))
-    for pool, cap in ((provincial_items, 7), (national_items, 30)):
-        added = 0
-        for row in pool:
-            if row.get("url") not in used and len(selected) < 30 and added < cap:
-                selected.append(row); used.add(row.get("url")); added += 1
-    # 城市新闻不足时，用全国性报道补足，不重复。
+    # 先选人民日报深度报道、评论和全国性议题；有多少选多少，不虚构补足。
+    for row in national_items:
+        if len(selected) >= 21:
+            break
+        if row.get("url") not in used:
+            selected.append(row)
+            used.add(row.get("url"))
+
+    # 江苏地方内容只作补充，按13市轮转，单日最多9条地方素材。
+    local_slots = 30 - len(selected)
+    offset = datetime.now(CST).timetuple().tm_yday % len(CITY_NAMES)
+    rotated_cities = CITY_NAMES[offset:] + CITY_NAMES[:offset]
+    for city in rotated_cities:
+        if local_slots <= 0:
+            break
+        for row in city_items[city]:
+            if row.get("url") not in used:
+                selected.append(row)
+                used.add(row.get("url"))
+                local_slots -= 1
+                break
+    for row in provincial_items:
+        if local_slots <= 0:
+            break
+        if row.get("url") not in used:
+            selected.append(row)
+            used.add(row.get("url"))
+            local_slots -= 1
+
+    # 当期人民日报供稿不足时，先用其余人民日报补位；再用江苏地方稿补足。
+    for row in national_items:
+        if len(selected) >= 30:
+            break
+        if row.get("url") not in used:
+            selected.append(row)
+            used.add(row.get("url"))
     for row in items:
         if len(selected) >= 30:
             break
         if row.get("url") not in used:
-            selected.append(row); used.add(row.get("url"))
+            selected.append(row)
+            used.add(row.get("url"))
     leads = []
     for item in selected[:30]:
         city = city_for(item)
