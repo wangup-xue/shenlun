@@ -27,7 +27,11 @@ jobs:
           python-version: "3.12"
       - name: Discover news
         run: python scripts/jiangsu_news.py
-      - name: Build Jiangsu analysis cards\n        env:\n          MINIMAX_CN_API_KEY: ${{ secrets.MINIMAX_CN_API_KEY }}\n        run: python scripts/jiangsu_pipeline.py\n      - name: Commit updated metadata
+      - name: Build Jiangsu analysis cards
+        env:
+          MINIMAX_CN_API_KEY: ${{ secrets.MINIMAX_CN_API_KEY }}
+        run: python scripts/jiangsu_pipeline.py
+      - name: Commit updated metadata
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
