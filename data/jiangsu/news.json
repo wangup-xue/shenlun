@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 20:15:00",
+  "updated": "2026-11-13 20:30:00",
   "timezone": "Asia/Shanghai",
   "items": [
     {
@@ -9,14 +9,6 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lQS1tS1lLaEdDSHQ0ajZubEhvaktnX0VlMGprZW83YXR0VDF4UGJSZDJPdWtManhrS0l3RGh4U0w2OGVPMWhRTkFWNm9vQjF2bFAwTTdJZ3FyU2UyR3p4cnlYM1BiN2tCbVU1R2J2cmpybGkxLVZJLWpVRGt0VEE?oc=5",
       "summary": "韩正出席《联合国气候变化框架公约》第三十一次缔约方大会安塔利亚领导人峰会并作国别发言 &nbsp;&nbsp; 人民日报",
       "category": "人民日报"
-    },
-    {
-      "title": "韩国堤川市长率团访问江苏省盐城市 决定深化多领域交流合作 - 뉴스핌",
-      "source": "뉴스핌",
-      "date": "2026-11-13",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1DLUM3Y3F3cHpWOHlka0JEb2J2cXFXVlZQTWMyVC1ZSWZXZmttRURPZGQ5LWZQQkRJM3F0Qm0zM1FwSUNJZG5PbWdYN3FZVG1XMGpDamxJUlBjbk1Q?oc=5",
-      "summary": "韩国堤川市长率团访问江苏省盐城市 决定深化多领域交流合作 &nbsp;&nbsp; 뉴스핌",
-      "category": "盐城"
     },
     {
       "title": "跟车700多公里，看新能源重卡何以越跑越远（人民眼·推动新能源重卡规模化应用） - 人民日报",
@@ -49,14 +41,6 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0xYWVtTVJRajNvOGhvQ09vVUJZTGhLNExlN3dOT1dMcGcxQkd2Qlo5bGNnS3pmN29XUjRXb0Y1TWtMUUxjSUl5Yl9ZaTZGLTdVTzFpc1RKakdNUTdxdndkVWt3aEdVc0JueTR3LW14bnJmRUNwcmJkRk4teHQ3dnM?oc=5",
       "summary": "真正的领先，不惧开放共享（人民锐评） &nbsp;&nbsp; 人民日报",
       "category": "人民日报"
-    },
-    {
-      "title": "江苏镇江：河湖长制十年深耕 绘就人水和谐生态画卷 - 盐城要闻",
-      "source": "盐城要闻",
-      "date": "2026-11-13",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzcWllNVhYZ0ZTMnZ5a0ZTMjl3VjBXVm9nQ0FaV3MzWXlhbU16N3BrMXA2emdLRmFibnhBNk82enJFRXJTSGNNUU5lNE5vTkhLZU83U2pSZkhqYlRFTUlIWg?oc=5",
-      "summary": "江苏镇江：河湖长制十年深耕 绘就人水和谐生态画卷 &nbsp;&nbsp; 盐城要闻",
-      "category": "镇江"
     },
     {
       "title": "政策更精准，发展增实效（微观） - 人民日报",
@@ -203,6 +187,102 @@
       "category": "人民日报"
     },
     {
+      "title": "把绿色“写”进全产业链",
+      "source": "人民日报",
+      "date": "2026-11-13",
+      "url": "https://paper.people.com.cn/rmrb/pc/content/202611/13/content_30190988.html",
+      "summary": "人民日报报道江苏扬子江药业集团以沼气回用、分布式光伏、AI能源云智控和绿色供应链推进全链条循环经济。龙凤堂2025年回收利用沼气77.81万立方米、产生蒸汽3400多吨、降碳7000多吨；集团34.5兆瓦分布式光伏年发电量占总用电量近14%；2024—2025年旗下4个工厂云智控系统年节电超200万千瓦时、降碳1200余吨。",
+      "category": "人民日报"
+    },
+    {
+      "title": "人工智能时代，技能人才何为（连线评论员）",
+      "source": "人民日报",
+      "date": "2026-11-13",
+      "url": "https://paper.people.com.cn/rmrb/pc/content/202611/13/content_30190967.html",
+      "summary": "人民日报评论员与中国人民大学劳动人事学院院长对话指出，AI时代技能人才不仅要熟练操作设备，更需具备判断、管理、协调、合作能力；技术进步会淘汰部分旧技能，也会催生新岗位，关键在于新应用场景落地。",
+      "category": "人民日报"
+    },
+    {
+      "title": "为民造福是永远的落脚点（现场评论）",
+      "source": "人民日报",
+      "date": "2026-11-13",
+      "url": "https://paper.people.com.cn/rmrb/pc/content/202611/13/content_30190968.html",
+      "summary": "人民日报现场评论以甘肃南梁革命老区为例，回顾干部群众面向群众、发展产业、改善民生的实践，强调把群众冷暖放在心上、把为民尽责扛在肩上，以实干创造政绩。",
+      "category": "人民日报"
+    },
+    {
+      "title": "以科技创新筑牢“大国棉仓”（“咖”说科技）",
+      "source": "人民日报",
+      "date": "2026-11-13",
+      "url": "https://paper.people.com.cn/rmrb/pc/content/202611/13/content_30190929.html",
+      "summary": "人民日报报道我国棉花产业通过种质创新、栽培变革和智能生产提升供给质量。2025/2026年度中国棉花单产2487.6千克/公顷，为全球平均水平的2.8倍；“十四五”时期全国初次审定棉花品种576个，其中高品质品种144个。",
+      "category": "人民日报"
+    },
+    {
+      "title": "连续25年开讲第一课 刘吉臻院士为华电新生引航 - 人民网教育",
+      "source": "人民网教育",
+      "date": "2026-11-12",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40czNUYjk2VElKU3VSU1MwOEstQ29oend1WFluSDg4a3VaRlAzRDIwanpiVExQTFRWODZlVWMwZVA1SzJzckw2NXBuWUdkUHdGM3BVeGdsU3Fud1M3TkFudC13ZTdrbDVr?oc=5",
+      "summary": "连续25年开讲第一课 刘吉臻院士为华电新生引航 &nbsp;&nbsp; 人民网教育",
+      "category": "人民日报"
+    },
+    {
+      "title": "北京语言大学发布国际中文教育智能体“汉桥” - 人民网教育",
+      "source": "人民网教育",
+      "date": "2026-11-12",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tanhWR19iaTJ5Qjl6b3BMSndPcGtsYmh2MGJUS1pyc2YxME5kTnRUX3VhR1hYenc1NXg5djNWYnZtQ0N3c0NPdkNadldrVDRKUUlWQkFNZFJORGtUSm5RbkFpeEVVQzcy?oc=5",
+      "summary": "北京语言大学发布国际中文教育智能体“汉桥” &nbsp;&nbsp; 人民网教育",
+      "category": "人民日报"
+    },
+    {
+      "title": "专家学者共议人工智能赋能产教融合 - 人民网教育",
+      "source": "人民网教育",
+      "date": "2026-11-12",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBIS0IyMmQ1N1R1cXpCT3lFMzZsTFpPSGxtTGtNeERwdlZjcjByOS1LN0JNYWg4bUMwcGNQS2tIa2czel9VNWJyYUNnZ2VIUnRjNFAwaGxCMGtLUUhYem1zVGxPV2U2ZzFO?oc=5",
+      "summary": "专家学者共议人工智能赋能产教融合 &nbsp;&nbsp; 人民网教育",
+      "category": "人民日报"
+    },
+    {
+      "title": "持续提升产业创新能力 更好服务支撑经济高质量发展",
+      "source": "人民日报",
+      "date": "2026-11-11",
+      "url": "https://paper.people.com.cn/rmrb/pc/content/202611/11/content_30190577.html",
+      "summary": "人民日报报道张国清在上海调研时强调，以科技创新供给和产业需求牵引推动科技与产业深度融合，强化基础研究、关键基础工艺和材料攻关，完善中试验证、成果应用、科技金融和场景开放机制，并推动先进技术赋能传统产业。",
+      "category": "人民日报"
+    },
+    {
+      "title": "探访宿迁：从“电商名城”到“数字之都” - 人民日报",
+      "source": "人民日报",
+      "date": "2023-05-22",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBGaUhlNmRmYnJybTFPa3AtVlpVcjh0cy1FQkN0UkdRZUl2dnBDNzFhUkVKZEpNc1dQdGM5LXpfdDBGWmRDWVppcUN1bFptNFkwd3R6Vkx1VXVjS2dObFBXNEdHQzFRVzNlb0pUWl9Iai1RQXMzS0JvMw?oc=5",
+      "summary": "探访宿迁：从“电商名城”到“数字之都” &nbsp;&nbsp; 人民日报",
+      "category": "宿迁"
+    },
+    {
+      "title": "盐城滨海湿地这样跻身“世遗” - 人民日报",
+      "source": "人民日报",
+      "date": "2019-07-10",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1oaVBPenFhWFhSRkhvMGVVdVRhR1pkeE5VU1FDX1JaZGcySkJTaFdKTGJDZkhJdVl3YVpqbTNHb2g5Um5fUFJwMkp2eDctd2FGUUxsR3VONGwwTURVQjhRbUtLWEJYLXV2clBRZF8yMC1HcWdNbERqdFVn?oc=5",
+      "summary": "盐城滨海湿地这样跻身“世遗” &nbsp;&nbsp; 人民日报",
+      "category": "盐城"
+    },
+    {
+      "title": "韩国堤川市长率团访问江苏省盐城市 决定深化多领域交流合作 - 뉴스핌",
+      "source": "뉴스핌",
+      "date": "2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1DLUM3Y3F3cHpWOHlka0JEb2J2cXFXVlZQTWMyVC1ZSWZXZmttRURPZGQ5LWZQQkRJM3F0Qm0zM1FwSUNJZG5PbWdYN3FZVG1XMGpDamxJUlBjbk1Q?oc=5",
+      "summary": "韩国堤川市长率团访问江苏省盐城市 决定深化多领域交流合作 &nbsp;&nbsp; 뉴스핌",
+      "category": "盐城"
+    },
+    {
+      "title": "江苏镇江：河湖长制十年深耕 绘就人水和谐生态画卷 - 盐城要闻",
+      "source": "盐城要闻",
+      "date": "2026-11-13",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzcWllNVhYZ0ZTMnZ5a0ZTMjl3VjBXVm9nQ0FaV3MzWXlhbU16N3BrMXA2emdLRmFibnhBNk82enJFRXJTSGNNUU5lNE5vTkhLZU83U2pSZkhqYlRFTUlIWg?oc=5",
+      "summary": "江苏镇江：河湖长制十年深耕 绘就人水和谐生态画卷 &nbsp;&nbsp; 盐城要闻",
+      "category": "镇江"
+    },
+    {
       "title": "镇江用车辆轨迹等14类公共数据开展货运安全风险减量",
       "source": "金山网",
       "date": "2026-11-12",
@@ -255,30 +335,6 @@
       "category": "江苏全省",
       "city": "江苏全省",
       "summary": "江苏省零碳园区建设工作推进会在扬州召开，扬州经开区、无锡高新区等44家园区入选。江苏已形成“省级建设指南+市级行动方案+园区实践创新”路径，并探索绿电直连直供；名单实行动态管理，不达标园区将整改或调出。"
-    },
-    {
-      "title": "连续25年开讲第一课 刘吉臻院士为华电新生引航 - 人民网教育",
-      "source": "人民网教育",
-      "date": "2026-11-12",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40czNUYjk2VElKU3VSU1MwOEstQ29oend1WFluSDg4a3VaRlAzRDIwanpiVExQTFRWODZlVWMwZVA1SzJzckw2NXBuWUdkUHdGM3BVeGdsU3Fud1M3TkFudC13ZTdrbDVr?oc=5",
-      "summary": "连续25年开讲第一课 刘吉臻院士为华电新生引航 &nbsp;&nbsp; 人民网教育",
-      "category": "人民日报"
-    },
-    {
-      "title": "北京语言大学发布国际中文教育智能体“汉桥” - 人民网教育",
-      "source": "人民网教育",
-      "date": "2026-11-12",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tanhWR19iaTJ5Qjl6b3BMSndPcGtsYmh2MGJUS1pyc2YxME5kTnRUX3VhR1hYenc1NXg5djNWYnZtQ0N3c0NPdkNadldrVDRKUUlWQkFNZFJORGtUSm5RbkFpeEVVQzcy?oc=5",
-      "summary": "北京语言大学发布国际中文教育智能体“汉桥” &nbsp;&nbsp; 人民网教育",
-      "category": "人民日报"
-    },
-    {
-      "title": "专家学者共议人工智能赋能产教融合 - 人民网教育",
-      "source": "人民网教育",
-      "date": "2026-11-12",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBIS0IyMmQ1N1R1cXpCT3lFMzZsTFpPSGxtTGtNeERwdlZjcjByOS1LN0JNYWg4bUMwcGNQS2tIa2czel9VNWJyYUNnZ2VIUnRjNFAwaGxCMGtLUUhYem1zVGxPV2U2ZzFO?oc=5",
-      "summary": "专家学者共议人工智能赋能产教融合 &nbsp;&nbsp; 人民网教育",
-      "category": "人民日报"
     },
     {
       "title": "淮安洪泽探索把“奔县游”流量转化为过夜消费和全域旅游",
@@ -691,14 +747,6 @@
       "category": "镇江"
     },
     {
-      "title": "探访宿迁：从“电商名城”到“数字之都” - 人民日报",
-      "source": "人民日报",
-      "date": "2023-05-22",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBGaUhlNmRmYnJybTFPa3AtVlpVcjh0cy1FQkN0UkdRZUl2dnBDNzFhUkVKZEpNc1dQdGM5LXpfdDBGWmRDWVppcUN1bFptNFkwd3R6Vkx1VXVjS2dObFBXNEdHQzFRVzNlb0pUWl9Iai1RQXMzS0JvMw?oc=5",
-      "summary": "探访宿迁：从“电商名城”到“数字之都” &nbsp;&nbsp; 人民日报",
-      "category": "宿迁"
-    },
-    {
       "title": "长江岸线保护看镇江如何“发力”_我苏网 - ourjiangsu.com",
       "source": "ourjiangsu.com",
       "date": "2023-05-17",
@@ -811,14 +859,6 @@
       "category": "宿迁"
     },
     {
-      "title": "盐城滨海湿地这样跻身“世遗” - 人民日报",
-      "source": "人民日报",
-      "date": "2019-07-10",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1oaVBPenFhWFhSRkhvMGVVdVRhR1pkeE5VU1FDX1JaZGcySkJTaFdKTGJDZkhJdVl3YVpqbTNHb2g5Um5fUFJwMkp2eDctd2FGUUxsR3VONGwwTURVQjhRbUtLWEJYLXV2clBRZF8yMC1HcWdNbERqdFVn?oc=5",
-      "summary": "盐城滨海湿地这样跻身“世遗” &nbsp;&nbsp; 人民日报",
-      "category": "盐城"
-    },
-    {
       "title": "2018年世界运河城市论坛将于10月11日至13日在扬州举行_我苏网 - ourjiangsu.com",
       "source": "ourjiangsu.com",
       "date": "2018-10-08",
@@ -852,5 +892,10 @@
     }
   ],
   "warnings": [],
-  "notice": "RSS仅用于新闻发现；请打开原文核验来源、事实和数据。本站不转载新闻全文。"
+  "notice": "RSS仅用于新闻发现；请打开原文核验来源、事实和数据。本站不转载新闻全文。",
+  "source_policy": {
+    "primary": "人民日报纸面版及人民日报系深度报道、评论",
+    "supplementary": "江苏省级及13个设区市真实新闻实践",
+    "target_mix": "主池优先约70%，江苏地方补充约30%；人民日报当期供稿不足时如实补位"
+  }
 }
