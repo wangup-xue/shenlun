@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """江苏新闻申论线索卡片。仅分析RSS标题/短摘要，不抓取或保存新闻全文。"""
+# SiliconFlow API credentials are supplied through GitHub Actions Secrets; never store keys in source.
 import json
 import os
 import re
