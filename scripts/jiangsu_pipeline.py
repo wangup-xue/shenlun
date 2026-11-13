@@ -119,8 +119,37 @@ def main():
         if not str(content).strip():
             raise RuntimeError("SiliconFlow 返回内容为空")
         return str(content)
+    # 分层选材：先覆盖13市，再选省级报道，最后补充人民日报全国性议题。
+    city_items = {city: [] for city in CITY_NAMES}
+    provincial_items, national_items = [], []
+    for row in items:
+        cat = row.get("category", "")
+        if cat in city_items:
+            city_items[cat].append(row)
+        elif cat == "江苏省级":
+            provincial_items.append(row)
+        elif cat == "人民日报":
+            national_items.append(row)
+    selected, used = [], set()
+    # 每市最多先取2条，按城市轮转，避免单一城市占满首页。
+    for round_index in range(2):
+        for city in CITY_NAMES:
+            for row in city_items[city][round_index:round_index + 1]:
+                if row.get("url") not in used:
+                    selected.append(row); used.add(row.get("url"))
+    for pool, cap in ((provincial_items, 7), (national_items, 30)):
+        added = 0
+        for row in pool:
+            if row.get("url") not in used and len(selected) < 30 and added < cap:
+                selected.append(row); used.add(row.get("url")); added += 1
+    # 城市新闻不足时，用全国性报道补足，不重复。
+    for row in items:
+        if len(selected) >= 30:
+            break
+        if row.get("url") not in used:
+            selected.append(row); used.add(row.get("url"))
     leads = []
-    for item in items[:30]:
+    for item in selected[:30]:
         city = city_for(item)
         card = fallback(item, city)
         if has_key and annotate:
