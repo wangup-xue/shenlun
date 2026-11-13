@@ -228,7 +228,7 @@ def main():
     payload = {
         "updated": datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S"),
         "timezone": "Asia/Shanghai",
-        "analysis_mode": "RSS标题与短摘要级；不是全文分析",
+        "analysis_mode": "RSS卡片为标题与短摘要级分析；另附独立维护的人民日报原文核验型素材",
         "provider": provider,
         "model": model if provider == "siliconflow" else "MiniMax-M3.1-Flash",
         "items": leads
