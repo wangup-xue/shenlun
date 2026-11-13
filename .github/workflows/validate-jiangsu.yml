@@ -24,5 +24,7 @@ jobs:
           python-version: "3.12"
       - name: Compile Python scripts
         run: python -m py_compile scripts/jiangsu_news.py scripts/jiangsu_pipeline.py scripts/validate_jiangsu.py
+      - name: Check browser JavaScript
+        run: node --check assets/jiangsu-cases.js && node --check assets/jiangsu-terms.js
       - name: Validate Jiangsu data
         run: python scripts/validate_jiangsu.py
