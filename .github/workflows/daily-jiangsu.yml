@@ -27,14 +27,14 @@ jobs:
           python-version: "3.12"
       - name: Discover news
         run: python scripts/jiangsu_news.py
-      - name: Commit updated metadata
+      - name: Build Jiangsu analysis cards\n        env:\n          MINIMAX_CN_API_KEY: ${{ secrets.MINIMAX_CN_API_KEY }}\n        run: python scripts/jiangsu_pipeline.py\n      - name: Commit updated metadata
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jiangsu/news.json
+          git add data/jiangsu/news.json data/jiangsu/leads.json
           if git diff --cached --quiet; then
             echo "No news metadata changes."
           else
-            git commit -m "chore: update Jiangsu news metadata"
+            git commit -m "chore: update Jiangsu news and analysis cards"
             git push origin HEAD:jiangsu-migration
           fi
