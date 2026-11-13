@@ -26,7 +26,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Syntax check
-        run: python -m py_compile scripts/jiangsu_news.py scripts/jiangsu_pipeline.py
+        run: python -m py_compile scripts/jiangsu_news.py scripts/jiangsu_pipeline.py scripts/validate_jiangsu.py
+      - name: Validate Jiangsu data
+        run: python scripts/validate_jiangsu.py
       - name: Discover news
         run: python scripts/jiangsu_news.py
       - name: Build Jiangsu analysis cards
