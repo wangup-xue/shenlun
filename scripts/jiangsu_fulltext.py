@@ -22,11 +22,13 @@ class TextParser(HTMLParser):
         self.candidate_depth = 0
         self.all_parts, self.candidate_parts = [], []
         self.candidate_lengths = []
+        self.tag_stack = []
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag in self.SKIP: self.skip += 1
         cls = (attrs.get("class", "") + " " + attrs.get("id", "")).lower()
         is_candidate = tag == "article" or (tag in ("div", "section", "main") and any(m in cls for m in self.MARKERS))
+        self.tag_stack.append((tag, is_candidate))
         if is_candidate:
             self.candidate_depth += 1
             self.candidate_lengths.append(len(self.candidate_parts))
@@ -35,8 +37,12 @@ class TextParser(HTMLParser):
             if self.candidate_depth: self.candidate_parts.append("\n")
     def handle_endtag(self, tag):
         if tag in self.SKIP and self.skip: self.skip -= 1
-        if tag in ("article", "main", "section", "div") and self.candidate_depth:
-            self.candidate_depth -= 1
+        for i in range(len(self.tag_stack) - 1, -1, -1):
+            if self.tag_stack[i][0] == tag:
+                popped = self.tag_stack[i:]
+                self.tag_stack = self.tag_stack[:i]
+                self.candidate_depth = max(0, self.candidate_depth - sum(1 for _, flag in popped if flag))
+                break
         if tag in ("p", "div", "section", "h1", "h2", "h3", "li"):
             self.all_parts.append("\n")
             if self.candidate_depth: self.candidate_parts.append("\n")
@@ -209,7 +215,7 @@ def main():
     with open(path, "w", encoding="utf-8") as f: json.dump(payload, f, ensure_ascii=False, indent=2)
     print("人民日报原文研读报告：" + json.dumps(payload["fulltext_reading_report"], ensure_ascii=False))
     if counts["success"] == 0 and counts["unavailable"] > 0:
-        print("注意：本轮未成功读取任何原文；不得将工作流绿色状态理解为全文研读成功。")
+        print("::warning::本轮未成功读取任何原文；不得将工作流绿色状态理解为全文研读成功。")
 
 if __name__ == "__main__":
     main()
